@@ -1,0 +1,35 @@
+footer {
+    background-color: red;
+    color: white;
+    grid-area: footer;
+    height: fit-content;
+    padding: 10px;
+
+    .footer-element {
+        /* border: whitesmoke 5px solid; */
+        padding: 1rem;
+        margin: 0 0.5rem;
+
+        .piePagina {
+            display: grid;
+            grid-template-areas: "c1 c2 c3";
+
+            .columna1 {
+                grid-area: c1;
+            }
+
+            .columna2 {
+                grid-area: c2;
+                border-left: 0.5px whitesmoke solid;
+                border-right: 0.5px whitesmoke solid;
+                padding: 1rem 1.5rem;
+            }
+
+            .columna3 {
+                grid-area: c3;
+            }
+        }
+
+    }
+}
+

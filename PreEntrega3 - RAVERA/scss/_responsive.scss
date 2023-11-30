@@ -1,0 +1,162 @@
+/*--------------------- *RESPONSIVE* ----------------------*/
+
+
+@media (max-width:650px) {
+
+    /* ---- NAV-BAR RESPONSIVE  ---- */
+    header {
+        .mainNav {
+            display: none;
+        }
+
+        #navbar {
+            display: flex;
+            margin-top: 0;
+        }
+
+        .container-fluid {
+            margin-top: 0;
+            padding: 0;
+            border-top: cornflowerblue 15px solid;
+            border-bottom: red 15px solid;
+            height: 90px;
+
+            a {
+                position: sticky;
+                margin-top: -1.2rem;
+            }
+
+            button {
+                position: sticky;
+                margin-top: -1.2rem;
+            }
+
+            img {
+                height: 90px;
+            }
+
+        }
+
+        #navbarNavAltMarkup {
+            background-color: cornflowerblue;
+            padding: .5rem;
+            border-radius: .5rem;
+
+            a {
+                color: white;
+                padding: 0;
+                margin: 0 1rem;
+            }
+        }
+
+        .navbar-nav {
+            display: flex;
+            padding: 1rem;
+            /* background-color: lightgray; */
+            align-items: flex-end;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: medium;
+        }
+
+        .inicio {
+            grid-area: num1;
+        }
+
+        .institucion {
+            grid-area: num2;
+        }
+
+        .novedades {
+            grid-area: num3;
+        }
+
+        .contacto {
+            grid-area: num4;
+        }
+
+        .nav-link {
+            margin: 0 auto;
+        }
+
+        .navbar-nav-text {
+            display: grid;
+            grid-template-areas: "num1 num2"
+                "num3 num4";
+
+            .navbar-nav-icon {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        .icon {
+            margin: 0;
+            padding: 0;
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    /* ---- FOOTER RESPONSIVE ---- */
+
+    .piePagina {
+        display: grid;
+        grid-template-areas: "c1"
+            "c2"
+            "c3";
+    }
+
+    .columna2 {
+        grid-area: c2;
+        border-top: 0.5px whitesmoke solid;
+        border-bottom: 0.5px whitesmoke solid;
+        border-left: none;
+        border-right: none;
+        padding: 1rem 1.5rem;
+    }
+
+    /* ---- MAIN-BODY RESPONSIVE index.html---- */
+
+    .main-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    /* ---- MAIN-BODY RESPONSIVE contacto.html ---- */
+
+    .contacto-main {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .contacto-slide {
+            width: 90%;
+            margin: 1rem ;
+        }
+
+        .contacto-mapa {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+
+    /* ---- RESPONSIVE novedades.html ---- */
+    .novedades-body {
+        display: flex;
+        flex-direction: column;
+
+        .novedades-caja img {
+            width: 100%;
+            height: 350px;
+        }
+    }
+
+
+}

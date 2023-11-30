@@ -1,0 +1,26 @@
+/* --------- INDEX.HTML MAIN BODY ---------- */
+
+.box1 {
+    grid-area: box1;
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.main-body {
+    grid-area: seccion2;
+    /* border: 5px rgb(94, 24, 160) solid; */
+    display: flex;
+
+    img {
+        border: 5px black solid;
+        border-radius: .5rem;
+        width: 100%;
+        height: 100%;
+    }
+
+.caja {
+    margin: .2rem .2rem;
+    width: 100%;
+}}

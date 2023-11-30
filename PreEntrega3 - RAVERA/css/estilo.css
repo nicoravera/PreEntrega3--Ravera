@@ -1,0 +1,285 @@
+header {
+  width: 100%;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  /*MENU NAVEGABLE*/
+}
+header li {
+  list-style: none;
+}
+header #navbar {
+  display: none;
+}
+header .mainNav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border-top: 1rem cornflowerblue solid;
+  border-bottom: 1rem red solid;
+  background-color: white;
+  height: 5rem;
+}
+header .mainNav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+header .mainNav a:hover {
+  color: red;
+}
+header .mainNav .navList {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+}
+header .mainNav .logo {
+  position: sticky;
+  margin-top: 5rem;
+  background-color: white;
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: red;
+  color: white;
+  grid-area: footer;
+  height: fit-content;
+  padding: 10px;
+}
+footer .footer-element {
+  /* border: whitesmoke 5px solid; */
+  padding: 1rem;
+  margin: 0 0.5rem;
+}
+footer .footer-element .piePagina {
+  display: grid;
+  grid-template-areas: "c1 c2 c3";
+}
+footer .footer-element .piePagina .columna1 {
+  grid-area: c1;
+}
+footer .footer-element .piePagina .columna2 {
+  grid-area: c2;
+  border-left: 0.5px whitesmoke solid;
+  border-right: 0.5px whitesmoke solid;
+  padding: 1rem 1.5rem;
+}
+footer .footer-element .piePagina .columna3 {
+  grid-area: c3;
+}
+
+/* --------- INDEX.HTML MAIN BODY ---------- */
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.main-body {
+  grid-area: seccion2;
+  /* border: 5px rgb(94, 24, 160) solid; */
+  display: flex;
+}
+.main-body img {
+  border: 5px black solid;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+.main-body .caja {
+  margin: 0.2rem 0.2rem;
+  width: 100%;
+}
+
+.novedades-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.novedades-body img {
+  border: 5px black solid;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.novedades-caja {
+  margin: 0.5rem auto;
+  width: 99%;
+}
+
+/*-------  PAGINA CONTACTO    -------*/
+.contacto-main {
+  /* background-color: bisque; */
+  width: 100%;
+  display: flex;
+}
+
+.contacto-mapa {
+  /* border: yellowgreen 5px solid; */
+  width: 100%;
+  justify-content: center;
+  margin: 1rem auto 0;
+  padding: 0 1rem 0.5rem;
+}
+.contacto-mapa iframe {
+  border-radius: 0.5rem;
+}
+
+.contacto-slide {
+  background-color: rgb(96, 96, 96);
+  border-radius: 0.5rem;
+  color: white;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+}
+.contacto-slide h2 {
+  width: 30%;
+  font-size: 2.5rem;
+  padding-left: 2rem;
+}
+.contacto-slide li {
+  list-style: none;
+  justify-content: flex-end;
+}
+.contacto-slide a {
+  text-decoration: none;
+  color: white;
+}
+
+/*--------------------- *RESPONSIVE* ----------------------*/
+@media (max-width: 650px) {
+  /* ---- NAV-BAR RESPONSIVE  ---- */
+  header .mainNav {
+    display: none;
+  }
+  header #navbar {
+    display: flex;
+    margin-top: 0;
+  }
+  header .container-fluid {
+    margin-top: 0;
+    padding: 0;
+    border-top: cornflowerblue 15px solid;
+    border-bottom: red 15px solid;
+    height: 90px;
+  }
+  header .container-fluid a {
+    position: sticky;
+    margin-top: -1.2rem;
+  }
+  header .container-fluid button {
+    position: sticky;
+    margin-top: -1.2rem;
+  }
+  header .container-fluid img {
+    height: 90px;
+  }
+  header #navbarNavAltMarkup {
+    background-color: cornflowerblue;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  header #navbarNavAltMarkup a {
+    color: white;
+    padding: 0;
+    margin: 0 1rem;
+  }
+  header .navbar-nav {
+    display: flex;
+    padding: 1rem;
+    /* background-color: lightgray; */
+    align-items: flex-end;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: medium;
+  }
+  header .inicio {
+    grid-area: num1;
+  }
+  header .institucion {
+    grid-area: num2;
+  }
+  header .novedades {
+    grid-area: num3;
+  }
+  header .contacto {
+    grid-area: num4;
+  }
+  header .nav-link {
+    margin: 0 auto;
+  }
+  header .navbar-nav-text {
+    display: grid;
+    grid-template-areas: "num1 num2" "num3 num4";
+  }
+  header .navbar-nav-text .navbar-nav-icon {
+    display: flex;
+    justify-content: flex-end;
+  }
+  header .icon {
+    margin: 0;
+    padding: 0;
+  }
+  header .icon img {
+    width: 20px;
+    height: 20px;
+  }
+  /* ---- FOOTER RESPONSIVE ---- */
+  .piePagina {
+    display: grid;
+    grid-template-areas: "c1" "c2" "c3";
+  }
+  .columna2 {
+    grid-area: c2;
+    border-top: 0.5px whitesmoke solid;
+    border-bottom: 0.5px whitesmoke solid;
+    border-left: none;
+    border-right: none;
+    padding: 1rem 1.5rem;
+  }
+  /* ---- MAIN-BODY RESPONSIVE index.html---- */
+  .main-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+  }
+  /* ---- MAIN-BODY RESPONSIVE contacto.html ---- */
+  .contacto-main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contacto-main .contacto-slide {
+    width: 90%;
+    margin: 1rem;
+  }
+  .contacto-main .contacto-mapa {
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* ---- RESPONSIVE novedades.html ---- */
+  .novedades-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .novedades-body .novedades-caja img {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

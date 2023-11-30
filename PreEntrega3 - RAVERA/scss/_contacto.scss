@@ -1,0 +1,46 @@
+/*-------  PAGINA CONTACTO    -------*/
+
+.contacto-main {
+    /* background-color: bisque; */
+    width: 100%;
+    display: flex;
+}
+
+.contacto-mapa {
+    /* border: yellowgreen 5px solid; */
+    width: 100%;
+    justify-content: center;
+    margin: 1rem auto 0;
+    padding: 0 1rem 0.5rem;
+
+    iframe {
+        border-radius: .5rem;
+    }
+}
+
+.contacto-slide {
+    background-color: rgb(96, 96, 96);
+    border-radius: .5rem;
+    color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+
+    h2 {
+        width: 30%;
+        font-size: 2.5rem;
+        padding-left: 2rem;
+    }
+
+    li {
+        list-style: none;
+        justify-content: flex-end;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
